@@ -1,0 +1,136 @@
+
+.star-nav a {
+    @apply py-5 px-2 opacity-70 text-base;
+    border-bottom: 4px solid white;
+    border-top: 4px solid white;
+}
+
+.star-nav a:hover {
+    @apply opacity-70;
+}
+
+.star-nav a[data-iscurr="true"] {
+    @apply opacity-100 font-semibold;
+    border-bottom: 4px solid #008248;
+}
+
+.starbucks {
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.starbucks::-webkit-scrollbar {
+    width: 3px;
+}
+
+.starbucks::-webkit-scrollbar-thumb {
+    background: #008248;
+}
+
+.curation-bg {
+    background-image: url('./images/curation.svg');
+}
+
+.grey-bg {
+    background-color: #ecebe9;
+}
+
+.lightgreen-text {
+    color: #008248;
+}
+
+.lightgreen-bg {
+    background-color: #008248;
+}
+
+.darkgreen-bg {
+    background-color: #1e3932;
+}
+
+.darkgreen-text {
+    color: #1e3932;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.lightgrey-bg {
+    background-color: #f9f9f9;
+}
+
+.grey-boxshadow {
+    box-shadow: 0px 0px 7px #a09e9e;
+}
+
+.prevent-select {
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.green-bg {
+    background-color: #007549;
+}
+
+.hover-darkgreen {
+    @apply green-bg;
+}
+
+.hover-darkgreen:hover {
+    @apply darkgreen-bg;
+}
+
+.green-scroll::-webkit-scrollbar {
+    width: 2px;
+    padding: 20px;
+}
+
+.green-scroll::-webkit-scrollbar-track {
+    background-color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.green-scroll::-webkit-scrollbar-thumb {
+    @apply green-bg rounded-full w-2;
+}
+
+.extradarkgreen-bg {
+    background-color: #0e382c;
+}
+
+.footer-column{
+    @apply flex flex-col w-44 gap-6;
+}
+
+.footer-column > h2 {
+    @apply text-xl font-bold;
+}
+
+.footer-column > span {
+    @apply text-sm cursor-pointer;
+}
+
+.footer-column > span:hover {
+    @apply opacity-50;
+}
+
+.coffee-culture-bg {
+    background: url('./images/coffee_culture.png');
+    background-size: cover;
+    z-index: 1;
+    filter: brightness(0.7);
+    transition: all ease 0.6s;
+}
+
+.dark-culture-bg:hover .coffee-culture-bg {
+    filter: brightness(0.4);
+}
+
+.dark-culture-bg:hover {
+    cursor: pointer;
+}
+
+.hidden-scroll::-webkit-scrollbar {
+    display: none;
+}
